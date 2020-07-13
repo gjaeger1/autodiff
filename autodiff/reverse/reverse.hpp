@@ -243,6 +243,9 @@ struct Expr
     /// The value of this expression node.
     T val = {};
 
+    /// virtual destructor
+    virtual ~Expr(){};
+
     /// Construct an Expr object with given value.
     explicit Expr(const T& val) : val(val) {}
 
